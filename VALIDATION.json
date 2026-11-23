@@ -1,0 +1,61 @@
+{
+  "version": "0.1.0",
+  "validated_at": "2026-11-22T22:50:02.176544+08:00",
+  "build": {
+    "assembleDebug": "passed",
+    "testDebugUnitTest": {
+      "tests": 29,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "lintDebug": {
+      "errors": 0,
+      "severities": {
+        "Warning": 10,
+        "Hint": 1
+      }
+    },
+    "apk_signature_v2": "verified"
+  },
+  "additional_checks": {
+    "core_independent_jvm": 29,
+    "ai_image_asr_protocol_mock": 21,
+    "repository_with_android_io_stubs": 17,
+    "real_paid_ai_service": "not tested; no user credentials supplied"
+  },
+  "emulator": {
+    "name": "Codex-LifeStatus-QA",
+    "android_api": 28,
+    "resolution": "1080x2400",
+    "density_dpi": 440,
+    "passed": [
+      "fresh launch with unknown body values",
+      "water record and numeric update",
+      "meal and sleep records",
+      "natural decay over actual elapsed time",
+      "calibration and undo",
+      "weight and daily steps entry",
+      "process restart and APK update preserve records",
+      "image selection, preview, removal and unconfigured-service handling",
+      "native encrypted configuration save, reload and clear using offline test values",
+      "analysis upload preview excludes credentials and unselected raw text",
+      "JSON export parsed with five active records and no credentials",
+      "independent tab scroll positions",
+      "aligned peer cards and readable Chinese labels"
+    ]
+  },
+  "pending_on_oneplus_ace_3": [
+    "physical step sensor and ColorOS background behavior",
+    "microphone and speech provider behavior",
+    "real AI text/image/voice results after the user configures a service"
+  ],
+  "artifacts": {
+    "apk": "LifeStatus-0.1.0-debug.apk",
+    "apk_bytes": 18422122,
+    "apk_sha256": "2bc9b964a75848a0fb70cf6f15b639cea2af4f9b0af84e65444586531e07256f",
+    "source": "LifeStatus-android-source.zip",
+    "screenshot": "preview-android.png"
+  },
+  "data_note": "Screenshots use emulator test records; the APK contains no preloaded user records or API credentials."
+}
